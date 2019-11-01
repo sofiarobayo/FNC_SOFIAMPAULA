@@ -8,14 +8,25 @@
 import FNC as fn
 letrasProposicionalesA = ['p', 'q', 'r', 's', 't']
 # # Formula a la cual encontrar su forma clausal
-formula = "(p>q)"
-
+f1 = "((p>-q)>r)"
+f2 = "-(-p>(rO-q))"
+f3 = "(((pY-q)Y-r)O((-pYq)Y-r))"
 # Aplicando el algoritmo de Tseitin a formula
 # Se obtiene una cada que representa la formula en FNC
-fFNC = fn.Tseitin(formula, letrasProposicionalesA)
+f1FNC = fn.Tseitin(f1, letrasProposicionalesA)
+f2FNC = fn.Tseitin(f2, letrasProposicionalesA)
+f3FNC = fn.Tseitin(f3, letrasProposicionalesA)
 
 # Se obtiene la forma clausal como lista de listas de literales
-fClaus = fn.formaClausal(fFNC)
-
+f1Claus = fn.formaClausal(f1FNC)
+f2Claus = fn.formaClausal(f2FNC)
+f3Claus = fn.formaClausal(f3FNC)
 # Imprime el resultado en consola
-print(fClaus)
+print("La formula clausal de f1 es")
+print(f1Claus)
+
+print("La formula clausal de f2 es")
+print(f2Claus)
+
+print("La formula clausal de f3 es")
+print(f3Claus)

@@ -59,19 +59,19 @@ def Tseitin(A, letrasProposicionalesA):
             atomo = letrasProposicionalesB[i]
             pila = pila[:-1]
             pila.append(atomo)
-            l.append(atomo + '<-> -' + s)
+            l.append(atomo + '=-' + s)
             A = A[1:]
             s = A[0]
             if len(A) > 0:
                 s = A[0]
         elif s == ')':
-            w = pila[-1]
-            o = pila[-2]
-            v = pila[-3]
+            W = pila[-1]
+            O = pila[-2]
+            V = pila[-3]
             pila = pila[:len(pila)-4]
             i += 1
             atomo = letrasProposicionalesB[i]
-            l.append(atomo + "<->(" + v + o + w+")")
+            l.append(atomo + "=(" + V + O + W+")")
             s = atomo
         else:
             pila.append(s)
@@ -85,7 +85,7 @@ def Tseitin(A, letrasProposicionalesA):
     else:
         atomo = letrasProposicionalesB[i]
     for x in l:
-  
+
         y = enFNC(x)
         b += 'Y' + y
     b = atomo + b
