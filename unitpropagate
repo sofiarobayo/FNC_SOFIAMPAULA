@@ -1,0 +1,18 @@
+#input: S conjunto de cláusulas, I interpretacion parcial
+l=['p','q','r','s','-p','-q','-r','-s']
+def unitpropagate(S,I):
+    S = []
+    
+
+    while S!=0:
+        for i in S:
+            for g in i:
+                if g in l:
+                    g.pop(i)
+                    
+                else:
+                    return i
+
+
+
+S = [['p'],['p','q'],['-q','r','s']]
