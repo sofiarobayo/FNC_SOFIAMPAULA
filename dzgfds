@@ -1,0 +1,76 @@
+def reglacolumna1(lista):
+    sum=0
+    regla=[]
+    for s in lista:
+        sum+=i
+    if sum >3:
+        print("errror")
+    else:
+        if lista==(1,1):
+            regla += "("
+            regla.append("A")
+            regla.append("Y")
+            regla.append("-D")
+            regla.append("Y")
+            regla.append("G")
+            regla append(")")
+            
+        elif lista==(1):
+            regla.append("(")
+            regla.append("A")
+            regla.append("Y")
+            regla.append("-D")
+            regla.append("Y")
+            regla.append("-G")
+            regla.append(")")
+            regla.append("O")
+            regla.append("(")
+            regla.append("-A")
+            regla.append("Y")
+            regla.append("D")
+            regla.append("Y")
+            regla.append("-G")
+            regla.append(")")
+            regla.append("O")
+            regla.append("(")
+            regla.append("-A")
+            regla.append("Y")
+            regla.append("-D")
+            regla.append("Y")
+            regla.append("G")
+            regla.append(")")
+
+        elif lista==(2):
+            regla.append("(")
+            regla.append("A")
+            regla.append("Y")
+            regla.append("D")
+            regla.append("Y")
+            regla.append("-G")
+            regla.append(")")
+            regla.append("O")
+            regla.append("(")
+            regla.append("-A")
+            regla.append("Y")
+            regla.append("D")
+            regla.append("Y")
+            regla.append("G")
+            regla.append(")")
+
+        elif lista==(3):
+            regla.append("(")
+            regla.append("A")
+            regla.append("Y")
+            regla.append("D")
+            regla.append("Y")
+            regla.append("G")
+            regla.append(")")
+            
+            
+    return 0
+
+def reglacolumna2(lista):
+
+    return 0
+
+def reglacolumna3(lista):
